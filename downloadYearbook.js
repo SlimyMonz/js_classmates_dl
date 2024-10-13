@@ -1,8 +1,8 @@
 (async () => {
     const baseURL = 'https://yb.cmcdn.com/yearbooks/X/X/X/X/00000000000000000000000000000000/XXXX/'; // Change this to your base URL. 
-    const imageCount = 10; // Change this to the number of images the yearbook contains. 
+    const pages = 10; // Change this to the number of images the yearbook contains. 
 
-    for (let i = 1; i <= imageCount; i++) {
+    for (let i = 1; i <= pages; i++) {
         const imageUrl = `${baseURL}${String(i).padStart(4, '0')}.jpg`;
         
         try {
